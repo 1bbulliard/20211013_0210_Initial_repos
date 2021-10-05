@@ -7,10 +7,19 @@
 
 import SwiftUI
 
-struct ContentView: View {
-    var body: some View {
-        Text("Hello, world!")
-            .padding()
+struct ContentView: View
+{
+    var body: some View
+    {
+        VStack
+        {
+            Text("🎯🎯🎯🎯\nPut the bullseye where the number goes")
+            Text("89")
+        
+        }
+//
+//
+        
     }
 }
 
