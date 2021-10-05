@@ -14,8 +14,18 @@ struct ContentView: View
         VStack
         {
             Text("🎯🎯🎯🎯\nPut the bullseye where the number goes")
+            
             Text("89")
-        
+            HStack {
+                Text("1")
+                Slider(value: .constant(50), in:
+                        1.0 ... 100.0)
+                Text("100")
+            }
+            
+            Button(action: {}) {
+               Text ("Hit me")
+            }
         }
 //
 //
