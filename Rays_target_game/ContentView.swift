@@ -10,46 +10,73 @@ import SwiftUI
 
 struct ContentView: View
 {
+    
+    @State private var alertisvisible: Bool = false
+    @State private var whosthereisvisible: Bool = false
+    
     var body: some View
     {
-        VStack
-        {
-            Text("🎯🎯🎯🎯\nPut the bulls eye where the number goes").bold()
-                .kerning(2.0)
-                .multilineTextAlignment(.center)
-                .lineSpacing(4.0)
-                .font(.footnote)
-            
-            Text("89")
-                .kerning(-1.0)
-                .font(.largeTitle)
-                .fontWeight(.black)
-            HStack
-            {
-                Text("1")
-                    .bold()
-                Slider(value: .constant(50), in:
-                        1.0 ... 100.0).font(.footnote)
-                Text("100")
-                    .bold()
+        VStack {
+            VStack {
+                VStack
+                {
+                    Text("🎯🎯🎯🎯\nPut the bulls eye where the number goes").bold()
+                        .kerning(2.0)
+                        .multilineTextAlignment(.center)
+                        .lineSpacing(4.0)
+                        .font(.footnote)
+                    Text("89")
+                        .kerning(-1.0)
+                        .font(.largeTitle)
+                        .fontWeight(.black)
+                    HStack
+                    {
+                        Text("1")
+                        Slider(value: .constant(50), in:
+                                1.0 ... 100.0).font(.footnote)
+                        Text("100")
+                    }
+                    
+                    Button(action:
+                            {
+                        print("hellox swift")
+                        self.alertisvisible = true
+                
+                            }
+                          )
+                         {
+                           Text ("Hit me please")
+                               .bold()
+                         }
+                         .alert(isPresented: $alertisvisible) { () -> Alert in
+                             Alert(title: Text("Alert Title"), message: Text("Alert Message"), dismissButton: .default(Text("Ok")))
+                         }
+                       }
             }
-            
-            Button(action: {})
-               {
-                   Text ("Hit me please")
-                       .bold()
-               }
+            Button(action:
+                    {
+                print("hello swift2")
+                self.whosthereisvisible = true
+            }) {
+                Text("Button 2")
+            }
+            .alert(isPresented: $whosthereisvisible) { () -> Alert in
+                Alert(title: Text("Alert Title2"), message: Text("Alert Message2"), dismissButton: .default(Text("Ok")))
+            }
         }
-//
-//
-        
-    }
+        }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
         ContentView()
-            .previewLayout(.fixed(width: 468, height: 320))
+        .previewLayout(.fixed(width: 468, height: 320))
+    }
+}
+
+struct ContentView_Previews_2: PreviewProvider {
+    static var previews: some View {
+        /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/
     }
 }
