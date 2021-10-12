@@ -13,6 +13,7 @@ struct ContentView: View
     
     @State private var alertisvisible: Bool = false
     @State private var whosthereisvisible: Bool = false
+    @State private var button3isvisible: Bool = false
     
     var body: some View
     {
@@ -49,8 +50,7 @@ struct ContentView: View
                                .bold()
                          }
                          .alert(isPresented: $alertisvisible) { () -> Alert in
-                             Alert(title: Text("Alert Title"), message: Text("Alert Message"), dismissButton: .default(Text("Ok")))
-                         }
+                             Alert(title: Text("Alert Title"), message: Text("Alert Message"), dismissButton: .default(Text("Ok")))}
                        }
             }
             Button(action:
@@ -61,10 +61,22 @@ struct ContentView: View
                 Text("Button 2")
             }
             .alert(isPresented: $whosthereisvisible) { () -> Alert in
-                Alert(title: Text("Alert Title2"), message: Text("Alert Message2"), dismissButton: .default(Text("Ok")))
+                Alert(title: Text("Alert Title2"), message: Text("Alert Message2"), dismissButton: .default(Text("Ok")))}
+            
+            // 3rd button
+
+            Button(action: {
+                print("button 3")
+                self.button3isvisible = true
+            }) {
+                Text("Button3")
             }
+            .alert(isPresented: $button3isvisible) { () -> Alert in
+                Alert(title: Text("Alert Title3"), message: Text("Alert Message3"), dismissButton: .default(Text("Ok alert dm")))}
         }
         }
+    
+
 }
 
 struct ContentView_Previews: PreviewProvider {
