@@ -15,7 +15,7 @@ struct ContentView: View
     @State private var whosthereisvisible: Bool = false
     @State private var button3isvisible: Bool = false
     @State private var sliderx: Double = 20.00
-    
+   // @State private var slider_int: Int = Int(sliderx)
     var body: some View
     {
         VStack {
@@ -60,9 +60,14 @@ struct ContentView: View
                 self.whosthereisvisible = true
             }) {
                 Text("Button 2")
-            }
-            .alert(isPresented: $whosthereisvisible) { () -> Alert in
-                Alert(title: Text("Alert Title2"), message: Text("Alert Message2. the sliders value is \(self.sliderx)"), dismissButton: .default(Text("Ok")))}
+                
+          //  var slider_int: Int = Int(self.sliderx.rounded())
+            
+            
+           .alert(isPresented: $whosthereisvisible) {
+               
+    () -> Alert in
+                Alert(title: Text("Alert Title2"), message: Text("Alert Message2. the sliders double value is \(self.sliderx)  "), dismissButton: .default(Text("Ok")))}
             
             // 3rd button  more comments
 
