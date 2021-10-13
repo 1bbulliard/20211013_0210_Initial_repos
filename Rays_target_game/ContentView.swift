@@ -14,6 +14,7 @@ struct ContentView: View
     @State private var alertisvisible: Bool = false
     @State private var whosthereisvisible: Bool = false
     @State private var button3isvisible: Bool = false
+    @State private var sliderx: Double = 20.00
     
     var body: some View
     {
@@ -33,14 +34,14 @@ struct ContentView: View
                     HStack
                     {
                         Text("1")
-                        Slider(value: .constant(50), in:
+                        Slider(value: self.$sliderx, in:
                                 1.0 ... 100.0).font(.footnote)
                         Text("100")
                     }
                     
                     Button(action:
                             {
-                        print("hellox swift")
+                        print("hellox swift!")
                         self.alertisvisible = true
                 
                             }
@@ -50,7 +51,7 @@ struct ContentView: View
                                .bold()
                          }
                          .alert(isPresented: $alertisvisible) { () -> Alert in
-                             Alert(title: Text("Alert Title"), message: Text("Alert Message"), dismissButton: .default(Text("Ok")))}
+                             Alert(title: Text("Alert Title."), message: Text("Alert Message"), dismissButton: .default(Text("Ok")))}
                        }
             }
             Button(action:
@@ -61,7 +62,7 @@ struct ContentView: View
                 Text("Button 2")
             }
             .alert(isPresented: $whosthereisvisible) { () -> Alert in
-                Alert(title: Text("Alert Title2"), message: Text("Alert Message2"), dismissButton: .default(Text("Ok")))}
+                Alert(title: Text("Alert Title2"), message: Text("Alert Message2. the sliders value is \(self.sliderx)"), dismissButton: .default(Text("Ok")))}
             
             // 3rd button  more comments
 
