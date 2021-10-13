@@ -72,7 +72,7 @@ struct ContentView: View
                 Text("Button3")
             }
             .alert(isPresented: $button3isvisible) { () -> Alert in
-                Alert(title: Text("Alert Title3"), message: Text("Alert Message3"), dismissButton: .default(Text("Ok alert dm")))}
+                Alert(title: Text("Alert Title3"), message: Text("Alert Message3"), dismissButton: .default(Text("Ok alert d")))}
         }
         }
     
