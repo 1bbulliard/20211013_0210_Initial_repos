@@ -47,7 +47,7 @@ struct ContentView: View
                             }
                           )
                          {
-                           Text ("Hit me please")
+                           Text ("Hit me please. sliders value is \(self.sliderx)")
                                .bold()
                          }
                          .alert(isPresented: $alertisvisible) { () -> Alert in
