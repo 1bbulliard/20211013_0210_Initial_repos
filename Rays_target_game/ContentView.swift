@@ -67,14 +67,14 @@ struct ContentView: View
            .alert(isPresented: $whosthereisvisible) {
                
     () -> Alert in
-                Alert(title: Text("Alert Title2"), message: Text("Alert Message2. the sliders double value is \(self.sliderx)  "), dismissButton: .default(Text("Ok")))}
+               Alert(title: Text("Alert Title2"), message: Text("Alert Message2. the sliders double value is \(Int(self.sliderx.rounded()))  "), dismissButton: .default(Text("Ok")))}
             
             // 3rd button  more comments
 
             Button(action: {
                 print("button 3")
                 self.button3isvisible = true
-            }) {
+            }   ) {
                 Text("Button3")
             }
             .alert(isPresented: $button3isvisible) { () -> Alert in
@@ -97,4 +97,5 @@ struct ContentView_Previews_2: PreviewProvider {
     static var previews: some View {
         /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/
     }
+}
 }
