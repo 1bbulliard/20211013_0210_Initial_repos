@@ -15,6 +15,9 @@ struct ContentView: View
     @State private var whosthereisvisible: Bool = false
     @State private var button3isvisible: Bool = false
     @State private var sliderx: Double = 20.00
+    @State private var game: Game = Game()
+    
+    // small game is the instantiation or reference
    // @State private var slider_int: Int = Int(sliderx)
     var body: some View
     {
@@ -27,7 +30,7 @@ struct ContentView: View
                         .multilineTextAlignment(.center)
                         .lineSpacing(4.0)
                         .font(.footnote)
-                    Text("89")
+                    Text(String(game.target))
                         .kerning(-1.0)
                         .font(.largeTitle)
                         .fontWeight(.black)

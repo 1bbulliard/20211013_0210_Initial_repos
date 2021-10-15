@@ -13,6 +13,7 @@
 		5C2C315C270CFD3500197AA5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C2C315B270CFD3500197AA5 /* Preview Assets.xcassets */; };
 		5C2C3167270CFD3600197AA5 /* Rays_target_gameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2C3166270CFD3600197AA5 /* Rays_target_gameTests.swift */; };
 		5C2C3172270CFD3600197AA5 /* Rays_target_gameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2C3171270CFD3600197AA5 /* Rays_target_gameUITests.swift */; };
+		5C3ED01E2719288F005B6FB8 /* game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3ED01D2719288F005B6FB8 /* game.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		5C2C316D270CFD3600197AA5 /* Rays_target_gameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Rays_target_gameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C2C3171270CFD3600197AA5 /* Rays_target_gameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rays_target_gameUITests.swift; sourceTree = "<group>"; };
 		5C2C3173270CFD3600197AA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C3ED01D2719288F005B6FB8 /* game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = game.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 		5C2C3153270CFD3400197AA5 /* Rays_target_game */ = {
 			isa = PBXGroup;
 			children = (
+				5C3ED01C27192809005B6FB8 /* Models */,
 				5C2C3154270CFD3400197AA5 /* Rays_target_gameApp.swift */,
 				5C2C3156270CFD3400197AA5 /* ContentView.swift */,
 				5C2C3158270CFD3500197AA5 /* Assets.xcassets */,
@@ -128,6 +131,14 @@
 				5C2C3173270CFD3600197AA5 /* Info.plist */,
 			);
 			path = Rays_target_gameUITests;
+			sourceTree = "<group>";
+		};
+		5C3ED01C27192809005B6FB8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5C3ED01D2719288F005B6FB8 /* game.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C3ED01E2719288F005B6FB8 /* game.swift in Sources */,
 				5C2C3157270CFD3400197AA5 /* ContentView.swift in Sources */,
 				5C2C3155270CFD3400197AA5 /* Rays_target_gameApp.swift in Sources */,
 			);
