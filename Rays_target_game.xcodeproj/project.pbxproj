@@ -11,27 +11,8 @@
 		5C2C3157270CFD3400197AA5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2C3156270CFD3400197AA5 /* ContentView.swift */; };
 		5C2C3159270CFD3500197AA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C2C3158270CFD3500197AA5 /* Assets.xcassets */; };
 		5C2C315C270CFD3500197AA5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C2C315B270CFD3500197AA5 /* Preview Assets.xcassets */; };
-		5C2C3167270CFD3600197AA5 /* Rays_target_gameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2C3166270CFD3600197AA5 /* Rays_target_gameTests.swift */; };
-		5C2C3172270CFD3600197AA5 /* Rays_target_gameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2C3171270CFD3600197AA5 /* Rays_target_gameUITests.swift */; };
 		5C3ED01E2719288F005B6FB8 /* game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3ED01D2719288F005B6FB8 /* game.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		5C2C3163270CFD3600197AA5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5C2C3149270CFD3400197AA5 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5C2C3150270CFD3400197AA5;
-			remoteInfo = Rays_target_game;
-		};
-		5C2C316E270CFD3600197AA5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5C2C3149270CFD3400197AA5 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5C2C3150270CFD3400197AA5;
-			remoteInfo = Rays_target_game;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		5C2C3151270CFD3400197AA5 /* Rays_target_game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rays_target_game.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,31 +21,11 @@
 		5C2C3158270CFD3500197AA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C2C315B270CFD3500197AA5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5C2C315D270CFD3500197AA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5C2C3162270CFD3600197AA5 /* Rays_target_gameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Rays_target_gameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5C2C3166270CFD3600197AA5 /* Rays_target_gameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rays_target_gameTests.swift; sourceTree = "<group>"; };
-		5C2C3168270CFD3600197AA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5C2C316D270CFD3600197AA5 /* Rays_target_gameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Rays_target_gameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5C2C3171270CFD3600197AA5 /* Rays_target_gameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rays_target_gameUITests.swift; sourceTree = "<group>"; };
-		5C2C3173270CFD3600197AA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C3ED01D2719288F005B6FB8 /* game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = game.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		5C2C314E270CFD3400197AA5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5C2C315F270CFD3600197AA5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5C2C316A270CFD3600197AA5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -78,8 +39,6 @@
 			isa = PBXGroup;
 			children = (
 				5C2C3153270CFD3400197AA5 /* Rays_target_game */,
-				5C2C3165270CFD3600197AA5 /* Rays_target_gameTests */,
-				5C2C3170270CFD3600197AA5 /* Rays_target_gameUITests */,
 				5C2C3152270CFD3400197AA5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,8 +47,6 @@
 			isa = PBXGroup;
 			children = (
 				5C2C3151270CFD3400197AA5 /* Rays_target_game.app */,
-				5C2C3162270CFD3600197AA5 /* Rays_target_gameTests.xctest */,
-				5C2C316D270CFD3600197AA5 /* Rays_target_gameUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -113,24 +70,6 @@
 				5C2C315B270CFD3500197AA5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		5C2C3165270CFD3600197AA5 /* Rays_target_gameTests */ = {
-			isa = PBXGroup;
-			children = (
-				5C2C3166270CFD3600197AA5 /* Rays_target_gameTests.swift */,
-				5C2C3168270CFD3600197AA5 /* Info.plist */,
-			);
-			path = Rays_target_gameTests;
-			sourceTree = "<group>";
-		};
-		5C2C3170270CFD3600197AA5 /* Rays_target_gameUITests */ = {
-			isa = PBXGroup;
-			children = (
-				5C2C3171270CFD3600197AA5 /* Rays_target_gameUITests.swift */,
-				5C2C3173270CFD3600197AA5 /* Info.plist */,
-			);
-			path = Rays_target_gameUITests;
 			sourceTree = "<group>";
 		};
 		5C3ED01C27192809005B6FB8 /* Models */ = {
@@ -161,42 +100,6 @@
 			productReference = 5C2C3151270CFD3400197AA5 /* Rays_target_game.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5C2C3161270CFD3600197AA5 /* Rays_target_gameTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5C2C3179270CFD3600197AA5 /* Build configuration list for PBXNativeTarget "Rays_target_gameTests" */;
-			buildPhases = (
-				5C2C315E270CFD3600197AA5 /* Sources */,
-				5C2C315F270CFD3600197AA5 /* Frameworks */,
-				5C2C3160270CFD3600197AA5 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5C2C3164270CFD3600197AA5 /* PBXTargetDependency */,
-			);
-			name = Rays_target_gameTests;
-			productName = Rays_target_gameTests;
-			productReference = 5C2C3162270CFD3600197AA5 /* Rays_target_gameTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		5C2C316C270CFD3600197AA5 /* Rays_target_gameUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5C2C317C270CFD3600197AA5 /* Build configuration list for PBXNativeTarget "Rays_target_gameUITests" */;
-			buildPhases = (
-				5C2C3169270CFD3600197AA5 /* Sources */,
-				5C2C316A270CFD3600197AA5 /* Frameworks */,
-				5C2C316B270CFD3600197AA5 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5C2C316F270CFD3600197AA5 /* PBXTargetDependency */,
-			);
-			name = Rays_target_gameUITests;
-			productName = Rays_target_gameUITests;
-			productReference = 5C2C316D270CFD3600197AA5 /* Rays_target_gameUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -208,14 +111,6 @@
 				TargetAttributes = {
 					5C2C3150270CFD3400197AA5 = {
 						CreatedOnToolsVersion = 12.5.1;
-					};
-					5C2C3161270CFD3600197AA5 = {
-						CreatedOnToolsVersion = 12.5.1;
-						TestTargetID = 5C2C3150270CFD3400197AA5;
-					};
-					5C2C316C270CFD3600197AA5 = {
-						CreatedOnToolsVersion = 12.5.1;
-						TestTargetID = 5C2C3150270CFD3400197AA5;
 					};
 				};
 			};
@@ -233,8 +128,6 @@
 			projectRoot = "";
 			targets = (
 				5C2C3150270CFD3400197AA5 /* Rays_target_game */,
-				5C2C3161270CFD3600197AA5 /* Rays_target_gameTests */,
-				5C2C316C270CFD3600197AA5 /* Rays_target_gameUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -246,20 +139,6 @@
 			files = (
 				5C2C315C270CFD3500197AA5 /* Preview Assets.xcassets in Resources */,
 				5C2C3159270CFD3500197AA5 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5C2C3160270CFD3600197AA5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5C2C316B270CFD3600197AA5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,36 +155,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5C2C315E270CFD3600197AA5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5C2C3167270CFD3600197AA5 /* Rays_target_gameTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5C2C3169270CFD3600197AA5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5C2C3172270CFD3600197AA5 /* Rays_target_gameUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		5C2C3164270CFD3600197AA5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5C2C3150270CFD3400197AA5 /* Rays_target_game */;
-			targetProxy = 5C2C3163270CFD3600197AA5 /* PBXContainerItemProxy */;
-		};
-		5C2C316F270CFD3600197AA5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5C2C3150270CFD3400197AA5 /* Rays_target_game */;
-			targetProxy = 5C2C316E270CFD3600197AA5 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		5C2C3174270CFD3600197AA5 /* Debug */ = {
@@ -466,86 +316,6 @@
 			};
 			name = Release;
 		};
-		5C2C317A270CFD3600197AA5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Rays_target_gameTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Test-org.Rays-target-gameTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rays_target_game.app/Rays_target_game";
-			};
-			name = Debug;
-		};
-		5C2C317B270CFD3600197AA5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Rays_target_gameTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Test-org.Rays-target-gameTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rays_target_game.app/Rays_target_game";
-			};
-			name = Release;
-		};
-		5C2C317D270CFD3600197AA5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Rays_target_gameUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Test-org.Rays-target-gameUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Rays_target_game;
-			};
-			name = Debug;
-		};
-		5C2C317E270CFD3600197AA5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Rays_target_gameUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Test-org.Rays-target-gameUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Rays_target_game;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -563,24 +333,6 @@
 			buildConfigurations = (
 				5C2C3177270CFD3600197AA5 /* Debug */,
 				5C2C3178270CFD3600197AA5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5C2C3179270CFD3600197AA5 /* Build configuration list for PBXNativeTarget "Rays_target_gameTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5C2C317A270CFD3600197AA5 /* Debug */,
-				5C2C317B270CFD3600197AA5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5C2C317C270CFD3600197AA5 /* Build configuration list for PBXNativeTarget "Rays_target_gameUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5C2C317D270CFD3600197AA5 /* Debug */,
-				5C2C317E270CFD3600197AA5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
