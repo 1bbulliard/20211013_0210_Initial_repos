@@ -12,7 +12,18 @@
 		5C2C3159270CFD3500197AA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C2C3158270CFD3500197AA5 /* Assets.xcassets */; };
 		5C2C315C270CFD3500197AA5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C2C315B270CFD3500197AA5 /* Preview Assets.xcassets */; };
 		5C3ED01E2719288F005B6FB8 /* game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3ED01D2719288F005B6FB8 /* game.swift */; };
+		5CB8A10A2722496800D45E81 /* Rays_target_gameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB8A1092722496800D45E81 /* Rays_target_gameTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5CB8A10B2722496800D45E81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5C2C3149270CFD3400197AA5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5C2C3150270CFD3400197AA5;
+			remoteInfo = Rays_target_game;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		5C2C3151270CFD3400197AA5 /* Rays_target_game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rays_target_game.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +33,19 @@
 		5C2C315B270CFD3500197AA5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5C2C315D270CFD3500197AA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C3ED01D2719288F005B6FB8 /* game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = game.swift; sourceTree = "<group>"; };
+		5CB8A1072722496800D45E81 /* Rays_target_gameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Rays_target_gameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CB8A1092722496800D45E81 /* Rays_target_gameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rays_target_gameTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		5C2C314E270CFD3400197AA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CB8A1042722496800D45E81 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				5C2C3153270CFD3400197AA5 /* Rays_target_game */,
+				5CB8A1082722496800D45E81 /* Rays_target_gameTests */,
 				5C2C3152270CFD3400197AA5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				5C2C3151270CFD3400197AA5 /* Rays_target_game.app */,
+				5CB8A1072722496800D45E81 /* Rays_target_gameTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -80,6 +102,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		5CB8A1082722496800D45E81 /* Rays_target_gameTests */ = {
+			isa = PBXGroup;
+			children = (
+				5CB8A1092722496800D45E81 /* Rays_target_gameTests.swift */,
+			);
+			path = Rays_target_gameTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -100,17 +130,39 @@
 			productReference = 5C2C3151270CFD3400197AA5 /* Rays_target_game.app */;
 			productType = "com.apple.product-type.application";
 		};
+		5CB8A1062722496800D45E81 /* Rays_target_gameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CB8A10F2722496800D45E81 /* Build configuration list for PBXNativeTarget "Rays_target_gameTests" */;
+			buildPhases = (
+				5CB8A1032722496800D45E81 /* Sources */,
+				5CB8A1042722496800D45E81 /* Frameworks */,
+				5CB8A1052722496800D45E81 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5CB8A10C2722496800D45E81 /* PBXTargetDependency */,
+			);
+			name = Rays_target_gameTests;
+			productName = Rays_target_gameTests;
+			productReference = 5CB8A1072722496800D45E81 /* Rays_target_gameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		5C2C3149270CFD3400197AA5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1250;
+				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
 					5C2C3150270CFD3400197AA5 = {
 						CreatedOnToolsVersion = 12.5.1;
+					};
+					5CB8A1062722496800D45E81 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 5C2C3150270CFD3400197AA5;
 					};
 				};
 			};
@@ -128,6 +180,7 @@
 			projectRoot = "";
 			targets = (
 				5C2C3150270CFD3400197AA5 /* Rays_target_game */,
+				5CB8A1062722496800D45E81 /* Rays_target_gameTests */,
 			);
 		};
 /* End PBXProject section */
@@ -139,6 +192,13 @@
 			files = (
 				5C2C315C270CFD3500197AA5 /* Preview Assets.xcassets in Resources */,
 				5C2C3159270CFD3500197AA5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CB8A1052722496800D45E81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,7 +215,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5CB8A1032722496800D45E81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CB8A10A2722496800D45E81 /* Rays_target_gameTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5CB8A10C2722496800D45E81 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5C2C3150270CFD3400197AA5 /* Rays_target_game */;
+			targetProxy = 5CB8A10B2722496800D45E81 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		5C2C3174270CFD3600197AA5 /* Debug */ = {
@@ -316,6 +392,54 @@
 			};
 			name = Release;
 		};
+		5CB8A10D2722496800D45E81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Test-org.Rays-target-gameTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rays_target_game.app/Rays_target_game";
+			};
+			name = Debug;
+		};
+		5CB8A10E2722496800D45E81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Test-org.Rays-target-gameTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rays_target_game.app/Rays_target_game";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -333,6 +457,15 @@
 			buildConfigurations = (
 				5C2C3177270CFD3600197AA5 /* Debug */,
 				5C2C3178270CFD3600197AA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CB8A10F2722496800D45E81 /* Build configuration list for PBXNativeTarget "Rays_target_gameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CB8A10D2722496800D45E81 /* Debug */,
+				5CB8A10E2722496800D45E81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

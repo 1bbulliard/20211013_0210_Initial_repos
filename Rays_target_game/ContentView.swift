@@ -49,11 +49,11 @@ struct ContentView: View
                             {
                         print("hellox swift!")
                         self.alertisvisible = true
-                
+                        
                             }
                           )
                          {
-                           Text ("Hit me please. sliders value is \(self.sliderx)")
+                           Text ("Hit me please. sliders value is: \(self.sliderx)")
                                .bold()
                          }
                          .alert(isPresented: $alertisvisible) { () -> Alert in
