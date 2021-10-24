@@ -23,13 +23,15 @@ struct Game
         var employee =
         [
             "name":  "Taylor Swift",
-            "Job":   "Singer",
-            "location":  "Nashville"
+            "job":   "Singer",
+            "location":  "Nashville",
+         
         ]
         
         print(employee["name"])
         print(employee["job"])
         print(employee["location"])
+ 
         
         let olympics =
         [
