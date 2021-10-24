@@ -15,6 +15,13 @@ struct Game
     var diff: Int = 0
     var awardedpoints = 0
     mutating func points(slidervalue: Int) -> Int {
+        // **** test array stuff
+        var teststring = ["Bob", "Tom", "Gabe", "henry"]
+        print(teststring[0])
+        print("Yooo there \(teststring[1])") 
+        
+        // ****** test array end
+        
         diff = abs(slidervalue - self.target)
         if  slidervalue > self.target
            {diff = slidervalue - self.target}
