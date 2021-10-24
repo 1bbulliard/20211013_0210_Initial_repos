@@ -20,6 +20,27 @@ struct Game
         print(teststring[0])
         print("Yooo there \(teststring[1])") 
         
+        var employee =
+        [
+            "name":  "Taylor Swift",
+            "Job":   "Singer",
+            "location":  "Nashville"
+        ]
+        
+        print(employee["name"])
+        print(employee["job"])
+        print(employee["location"])
+        
+        let olympics =
+        [
+            2012: "London",
+            2016: "Rio de janeiro",
+            2021: "Tokyo"
+        ]
+        print (olympics[2012, default: "unknown"])
+        print (olympics[2021, default: "unknown"])
+        
+        
         // ****** test array end
         
         diff = abs(slidervalue - self.target)
