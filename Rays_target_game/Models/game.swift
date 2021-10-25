@@ -42,7 +42,12 @@ struct Game
         print (olympics[2012, default: "unknown"])
         print (olympics[2021, default: "unknown"])
         
-        
+        let names = ["Arthur", "Ford", "Trillian", "Zaphod", "Marvin"]
+
+        for banana in names
+        {
+            print(banana)
+        }
         // ****** test array end
         
         diff = abs(slidervalue - self.target)
