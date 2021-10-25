@@ -43,7 +43,7 @@ struct Game
         print (olympics[2021, default: "unknown"])
         
         let names = ["Arthur", "Ford", "Trillian", "Zaphod", "Marvin"]
-
+// each iteration loads the variable banana from names(0), names(1), names(2),etc
         for banana in names
         {
             print(banana)
