@@ -69,23 +69,25 @@ struct ContentView: View
                 self.whosthereisvisible = true
             }) {
                 Text("Button 2")
-                
-           // var slider_int: Int = Int(self.sliderx.rounded())
-            
+                    .padding()
+                // put } here for button2
+            }
             
            .alert(isPresented: $whosthereisvisible) {
                
     () -> Alert in
                Alert(title: Text("Alert Title2"), message: Text("Alert Message2. the sliders rounded value is \(Int(self.sliderx.rounded()))"  + " You scored  \(self.game.points(slidervalue:  (Int(self.sliderx.rounded())) )  ) this round"), dismissButton: .default(Text("Ok")))}
+                // put } here and drop bottom
             
             // 3rd button  more comments
                 
             Button(action: {
                 print("button 3")
-                
+                    
                 self.button3isvisible = true
             }   ) {
                 Text("Button3")
+                    .padding()
                     
             }
             .alert(isPresented: $button3isvisible) { () -> Alert in
@@ -106,7 +108,8 @@ struct ContentView: View
                     Alert(title: Text("Alert Title4"), message: Text("Alert Message4"), dismissButton: .default(Text("Ok alert dm 4")))}
                 
      // moved } to here
-            }
+    // button 2 ends here (removing)
+        //    }
                        // middle vstack
                 }
                     // innermost vstack ends here
